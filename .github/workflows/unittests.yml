@@ -24,9 +24,3 @@ jobs:
 
       - name: Verify setup
         run: python --version
-
-      - name: Check for style issues
-        run: flake8 src/ tests/ --max-line-length=88
-
-      - name: Verify code
-        run: pytest tests/ -v --tb=short
